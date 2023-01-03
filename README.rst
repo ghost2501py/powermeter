@@ -4,13 +4,38 @@ Powermeter
 
 Project to apply to Powermeter position.
 
-Getting started
-===============
+Installing with Docker
+======================
 
 Prerequisites
 -------------
 
-* Python >= 3.10.6
+* Docker >= 20.10.22
+
+Installing
+----------
+
+1. Build the image:
+
+   .. code-block:: bash
+
+      $ sudo docker build . -t powermeter
+
+2. Run the container:
+
+   .. code-block:: bash
+
+      $ sudo docker run -it -p 8020:8020 powermeter
+
+The site will be available on <http://0.0.0.0:8020>.
+
+Installing manually
+===================
+
+Prerequisites
+-------------
+
+* Python >= 3.8
 
 Installing
 ----------
