@@ -61,7 +61,7 @@ The site will be available on <http://localhost:8000> or <http://127.0.0.1:8000>
 REST API
 ========
 
-REST API documentation will be available on <http://localhost:8000/api/docs/>.
+REST API documentation will be available on `/api/docs/`.
 
 Requirements
 ============
