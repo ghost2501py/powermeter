@@ -46,4 +46,4 @@ class MeasurementViewSet(
 
     def perform_create(self, serializer):
         gauge_pk = self.kwargs[compose_parent_pk_kwarg_name('gauge')]
-        serializer.save(gauge_key=gauge_pk)
+        serializer.save(gauge_id=gauge_pk)
