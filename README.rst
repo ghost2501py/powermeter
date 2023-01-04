@@ -38,8 +38,10 @@ The site will be available on <http://localhost:8000> or <http://127.0.0.1:8000>
 Deploy
 ======
 
-TODO: use environment variables for settings, ideally with
-`django-environ <https://django-environ.readthedocs.io/en/latest/>`_.
+TODO:
+
+* Use environment variables for settings, ideally with `django-environ <https://django-environ.readthedocs.io/en/latest/>`_.
+* Use volumes for sqlite database
 
 Prerequisites
 -------------
