@@ -33,7 +33,8 @@ class GaugeViewSet(
     @action(methods=['get'], detail=True, url_path='average-consumption', url_name='average_consumption')
     def average_consumption(self, *args, **kwargs):
         obj = self.get_object()
-        return Response({'average_consumption': obj.average_consumption}, status=status.HTTP_200_OK)
+        average_consumption = '{:.2f}'.format(obj.average_consumption)
+        return Response({'average_consumption': average_consumption}, status=status.HTTP_200_OK)
 
 
 class MeasurementViewSet(
@@ -45,4 +46,4 @@ class MeasurementViewSet(
 
     def perform_create(self, serializer):
         gauge_pk = self.kwargs[compose_parent_pk_kwarg_name('gauge')]
-        serializer.save(gauge_id=gauge_pk)
+        serializer.save(gauge_key=gauge_pk)
