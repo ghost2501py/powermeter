@@ -41,7 +41,7 @@ Deploy
 TODO:
 
 * Use environment variables for settings, ideally with `django-environ <https://django-environ.readthedocs.io/en/latest/>`_.
-* Use volumes for sqlite database
+* Use volumes for sqlite database.
 
 Prerequisites
 -------------
