@@ -4,6 +4,8 @@ Powermeter
 
 Project to apply to Powermeter position.
 
+The site is hosted on `http://44.203.53.169 <http://44.203.53.169/api/docs/>`_.
+
 Installing with Docker
 ======================
 
