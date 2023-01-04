@@ -6,33 +6,8 @@ Project to apply to Powermeter position.
 
 The site is hosted on `http://44.203.53.169 <http://44.203.53.169/api/docs/>`_.
 
-Installing with Docker
-======================
-
-Prerequisites
--------------
-
-* Docker >= 20.10.22
-
-Installing
-----------
-
-1. Build the image:
-
-   .. code-block:: bash
-
-      $ sudo docker build . -t powermeter
-
-2. Run the container:
-
-   .. code-block:: bash
-
-      $ sudo docker run -it -p 8020:8020 powermeter
-
-The site will be available on <http://0.0.0.0:8020>.
-
-Installing manually
-===================
+Getting started
+===============
 
 Prerequisites
 -------------
@@ -59,6 +34,32 @@ Installing
       $ python manage.py runserver
 
 The site will be available on <http://localhost:8000> or <http://127.0.0.1:8000>.
+
+Deploy
+======
+
+TODO: use environment variables for settings, ideally with
+`django-environ <https://django-environ.readthedocs.io/en/latest/>`_.
+
+Prerequisites
+-------------
+
+* Docker >= 20.10.22
+
+Installing
+----------
+
+1. Build the image:
+
+   .. code-block:: bash
+
+      $ sudo docker build . -t powermeter
+
+2. Run the container:
+
+   .. code-block:: bash
+
+      $ sudo docker run -d -it -p 80:8020 powermeter
 
 REST API
 ========
